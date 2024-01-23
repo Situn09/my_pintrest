@@ -8,13 +8,13 @@ const nextConfig = {
       "cdn.pixabay.com",
       "pixabay.com",
     ],
-    // remotePatterns: [
-    //     {
-    //       protocol: 'https',
-    //       hostname: 'lh3.googleusercontent.com',
-    //       pathname: '**',
-    //     },
-    //   ],
+    remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'lh3.googleusercontent.com',
+          pathname: '**',
+        },
+      ],
     images: {
       loader: "akamai",
       path: "",
