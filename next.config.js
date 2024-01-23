@@ -14,8 +14,6 @@ const nextConfig = {
     //     pathname: "**",
     //   },
     // ],
-    loader: "akamai",
-    path: "",
   },
 };
 
