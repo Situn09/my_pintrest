@@ -19,6 +19,7 @@ const nextConfig = {
       loader: "akamai",
       path: "",
     },
+    assetPrefix: './',
   },
 };
 
