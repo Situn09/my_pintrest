@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   images: {
     domains: [
       "lh3.googleusercontent.com",
@@ -17,7 +18,6 @@ const nextConfig = {
     loader: "akamai",
     path: "",
   },
-  assetPrefix: "./",
 };
 
 module.exports = nextConfig;
