@@ -67,10 +67,9 @@ function Header() {
       <div className="bg-[#e9e9e9] p-3 flex gap-3 items-center rounded-full w-full">
         <HiSearch className="text-[25px] text-gray-500" />
         <input
-          style={{ width: "70px" }}
           type="text"
           placeholder="Search"
-          className="bg-transparent outline-none"
+          className="bg-transparent outline-none w-[70px] vs:w-full lg:w-full xl:w-full 2xl:w-full"
           onChange={(e) => setState({ ...state, search: e.target.value })}
         />
       </div>
