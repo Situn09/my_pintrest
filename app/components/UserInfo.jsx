@@ -50,7 +50,7 @@ function UserInfo({ userInfo }) {
             <ShareButton
               title={"Share your Profile"}
               url={`https://situnprintrest.netlify.app/${userInfo.email}`}
-              text={"Share Your profile"}
+              text={""}
             />
           </div>
           {session?.user.email == userInfo.email ? (
