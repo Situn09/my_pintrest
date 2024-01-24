@@ -19,7 +19,7 @@ export default function Home() {
     // setListOfPins([]);
     setLoading(true);
     fetch(
-      `https://pixabay.com/api/?key=41894091-1b5f30cfbc18dc06e4b253142&q=${encodeURI(
+      `https://pixabay.com/api/?key=${process.env.API_KEY}&q=${encodeURI(
         state.search
       )}&image_type=photo&pretty=true`
     )
