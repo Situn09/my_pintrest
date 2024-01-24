@@ -41,6 +41,9 @@ export default function Home() {
           })
         );
         setLoading(false);
+      })
+      .catch((err) => {
+        console.log("Something went wrong", err);
       });
     // const q = query(collection(db, "pinterest-post"));
     // const querySnapshot = await getDocs(q);
