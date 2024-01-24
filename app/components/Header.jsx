@@ -64,7 +64,7 @@ function Header() {
       >
         Create
       </button>
-      <div className="bg-[#e9e9e9] p-3 flex gap-3 items-center rounded-full w-[100px] lg:w-full md:w-full">
+      <div className="bg-[#e9e9e9] p-3 flex gap-3 items-center rounded-full  w-[100px] vs:w-full md:w-full lg:w-full xl:w-full 2xl:w-full">
         <HiSearch className="text-[25px] text-gray-500" />
         <input
           type="text"
@@ -77,8 +77,8 @@ function Header() {
         className="text-[25px] 
         text-gray-500 md:hidden"
       /> */}
-      <HiBell className="text-[40px] md:text-[60px] text-gray-500" />
-      <HiChat className="text-[40px] md:text-[60px] text-gray-500" />
+      <HiBell className="text-[40px] md:text-[60px] text-gray-500 hidden md:flex lg:flex xl:flex 2xl:flex" />
+      <HiChat className="text-[40px] md:text-[60px] text-gray-500 hidden md:flex lg:flex xl:flex 2xl:flex" />
       {session?.user ? (
         <Image
           src={session.user.image}
