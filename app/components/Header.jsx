@@ -34,11 +34,11 @@ function Header() {
     router.push("/");
   };
 
-  const onCreateClick = () => {
+  const onCreateClick = async () => {
     if (session) {
       router.push("/pin-builder");
     } else {
-      signIn();
+      await signIn();
     }
   };
 
@@ -91,7 +91,7 @@ function Header() {
       ) : (
         <button
           className="font-semibold p-2 px-4 rounded-full hover:bg-gray-300"
-          onClick={() => signIn()}
+          onClick={async () => await signIn()}
         >
           Login
         </button>
