@@ -46,16 +46,13 @@ function UserInfo({ userInfo }) {
               Captured Keeps
             </button>
           ) : null}
-
-          <ShareButton
-            title={"Share your Profile"}
-            url={`https://situnprintrest.netlify.app/${userInfo.email}`}
-            text={"Share Your profile"}
-          >
-            <div className="bg-gray-200 hover:bg-slate-500  p-2 px-3 font-semibold mt-5 rounded-full">
-              Share
-            </div>
-          </ShareButton>
+          <div className="bg-gray-200 hover:bg-slate-500  p-2 px-3 font-semibold mt-5 rounded-full">
+            <ShareButton
+              title={"Share your Profile"}
+              url={`https://situnprintrest.netlify.app/${userInfo.email}`}
+              text={"Share Your profile"}
+            />
+          </div>
           {session?.user.email == userInfo.email ? (
             <>
               <button

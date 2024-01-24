@@ -9,7 +9,7 @@ const ShareButton = ({ title, text, url }) => {
         url: url,
       }}
     >
-      <button style={{ textAlign: "center" }}>Share</button>
+      <button style={{ textAlign: "center", width: "100%" }}>Share</button>
     </RWebShare>
   );
 };
