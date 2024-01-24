@@ -14,8 +14,8 @@ function UserInfo({ userInfo }) {
   console.log("hello user :", userInfo);
   const { data: session } = useSession();
 
-  const onLogOutClick = () => {
-    signOut();
+  const onLogOutClick = async () => {
+    await signOut();
     router.push("/");
   };
 
