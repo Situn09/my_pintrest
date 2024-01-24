@@ -38,8 +38,8 @@ function PinDetail({ params }) {
       {state.pin ? (
         <div className=" bg-white p-3 md:p-12 rounded-2xl md:px-24 lg:px-36">
           <HiArrowSmallLeft
-            className="text-[60px] font-bold ml-[-50px] 
-       cursor-pointer hover:bg-gray-200 rounded-full p-2 "
+            className="text-[60px] font-bold  
+       cursor-pointer hover:bg-gray-200 rounded-full pl-2  lg:ml-[-50px] xl:ml-[-50px] 2xl:ml-[-50px] "
             onClick={() => router.back()}
           />
           <div

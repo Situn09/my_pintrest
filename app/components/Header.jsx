@@ -43,7 +43,7 @@ function Header() {
   };
 
   return (
-    <div className="flex justify-between gap-3 md:gap-2 items-center p-6 w-full">
+    <div className="flex justify-between gap-0.5 md:gap-3 items-center p-6 w-full vs:gap-3 lg:gap-3 xl:gap-3 2xl:gap-3">
       <Image
         src="/logo.png"
         alt="log"
@@ -64,7 +64,7 @@ function Header() {
       >
         Create
       </button>
-      <div className="bg-[#e9e9e9] p-3 flex gap-3 items-center rounded-full   vs:w-full md:w-full lg:w-full xl:w-full 2xl:w-full">
+      <div className="bg-[#e9e9e9] p-3 flex gap-3 items-center rounded-full w-full">
         <HiSearch className="text-[25px] text-gray-500" />
         <input
           style={{ width: "70px" }}
