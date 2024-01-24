@@ -35,7 +35,7 @@ function UserInfo({ userInfo }) {
         />
         <h2 className="text-[30px] font-semibold">{userInfo.userName}</h2>
         <h2 className="text-gray-400">{userInfo.email}</h2>
-        <div className="flex gap-5">
+        <div className="flex-row gap-5 justify-center align-middle vs:flex md:flex lg:flex xl:flex 2xl:flex">
           {session?.user.email == userInfo.email ? (
             <button
               className={` hover:bg-slate-500 p-2 px-3 font-semibold mt-5 rounded-full ${
@@ -49,8 +49,8 @@ function UserInfo({ userInfo }) {
           <div className="bg-gray-200 hover:bg-slate-500  p-2 px-3 font-semibold mt-5 rounded-full">
             <ShareButton
               title={"Share your Profile"}
-              url={`http://localhost:3000/${userInfo.email}`}
-              text={"hi"}
+              url={`https://situnprintrest.netlify.app/${userInfo.email}`}
+              text={"Share Your profile"}
             >
               Share
             </ShareButton>

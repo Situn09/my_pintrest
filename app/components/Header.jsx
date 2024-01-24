@@ -43,7 +43,7 @@ function Header() {
   };
 
   return (
-    <div className="flex justify-between gap-3 md:gap-2 items-center p-6">
+    <div className="flex justify-between gap-3 md:gap-2 items-center p-6 w-full">
       <Image
         src="/logo.png"
         alt="log"
