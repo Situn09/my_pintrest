@@ -18,8 +18,9 @@ export default function Home() {
   const getAllPins = async () => {
     // setListOfPins([]);
     setLoading(true);
+    console.log(process.env.API_KEY);
     fetch(
-      `https://pixabay.com/api/?key=${process.env.API_KEY}&q=${encodeURI(
+      `https://pixabay.com/api/?key=41894091-1b5f30cfbc18dc06e4b253142&q=${encodeURI(
         state.search
       )}&image_type=photo&pretty=true`
     )
@@ -43,7 +44,10 @@ export default function Home() {
         setLoading(false);
       })
       .catch((err) => {
-        console.log("Something went wrong", err);
+        alert(
+          "Something went wrong. Look like free API rate limit exceeded",
+          err
+        );
       });
     // const q = query(collection(db, "pinterest-post"));
     // const querySnapshot = await getDocs(q);
