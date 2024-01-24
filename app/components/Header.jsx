@@ -53,7 +53,7 @@ function Header() {
         className="hover:bg-gray-300 p-2 rounded-full cursor-pointer"
       />
       <button
-        className="bg-black hover:bg-gray-300 text-white p-2 px-4 rounded-full"
+        className="bg-black hover:bg-gray-300 text-white p-2 px-4 rounded-full hidden md:flex lg:flex "
         onClick={() => router.push("/")}
       >
         Home
@@ -64,7 +64,7 @@ function Header() {
       >
         Create
       </button>
-      <div className="bg-[#e9e9e9] p-3 flex gap-3 items-center rounded-full w-full  md:flex">
+      <div className="bg-[#e9e9e9] p-3 flex gap-3 items-center rounded-full w-[100px] lg:w-full md:w-full">
         <HiSearch className="text-[25px] text-gray-500" />
         <input
           type="text"
