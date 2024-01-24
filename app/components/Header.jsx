@@ -64,9 +64,10 @@ function Header() {
       >
         Create
       </button>
-      <div className="bg-[#e9e9e9] p-3 flex gap-3 items-center rounded-full  w-[100px] vs:w-full md:w-full lg:w-full xl:w-full 2xl:w-full">
+      <div className="bg-[#e9e9e9] p-3 flex gap-3 items-center rounded-full   vs:w-full md:w-full lg:w-full xl:w-full 2xl:w-full">
         <HiSearch className="text-[25px] text-gray-500" />
         <input
+          style={{ width: "70px" }}
           type="text"
           placeholder="Search"
           className="bg-transparent outline-none"
